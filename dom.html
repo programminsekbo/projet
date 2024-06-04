@@ -6,13 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-<p>my name is </p>
+
+
+<p> </p>
+
+
+
+<input id="num1"><br><br>
+
+<input id="num2"> <br><br>
+
+<button onclick="Dome()">click</button>
 
 
 <script>
+
+  /*
 let myApp = document.getElementsByTagName('p');
 myApp[0].innerHTML = "<p>ed mobrok </p>";
-
+*/
 // id diya jai vab dorta laga  
 
 /*
@@ -62,6 +74,116 @@ let myApp = document.getElementsByName('myName');
 myApp[2].innerHTML = "ed mobrok";
 
 */
+
+
+
+
+//cookis dakher neyom 
+/*
+
+
+
+
+<p> </p>
+
+
+<button onclick="Dome()">click</button>
+
+
+function Dome(){
+
+var info = document.cookie;
+
+document.getElementsByTagName('p')[0].innerHTML=info;
+
+
+}
+
+
+*/
+/*
+
+<p> </p>
+
+
+<button onclick="Dome()">click</button>
+
+
+function Dome() {
+
+var info = document.domain;
+
+document.getElementsByName('p')[0].innerHTML=info;
+
+
+}
+
+
+*/
+
+//text reples korer jono ok
+
+/*
+
+function  Dome() {
+ document.open('text/html','replace');
+ document.write("<h2> my name is</h2> ");
+ document.close();
+
+}
+
+*/
+
+/*
+
+function Dome() {
+
+var w = Window.open();
+
+   w.document.open();
+   w.document.write('<h2> my name is</h2>');
+   w.document.close();
+
+
+
+}
+
+*/
+
+
+function Dome() {
+ let num1 =document.getElementById('num1').value;
+ let num2 =document.getElementById('num2').value;
+
+let rezult = parseFloat(num1)+parseFloat(num2);
+
+
+
+   alert(rezult);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
