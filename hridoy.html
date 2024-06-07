@@ -18,26 +18,25 @@
 
 
 
-function nume(name1,name2) {
-
-alert(name1+name2);
 
 
 
+async function myEvent() {
 
-
+let hridoy = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+ 
+let myName = await hridoy.json();
+   console.log(myName)
 
 };
-
-let name = +prompt("inter you 1st number");
-let $name = +prompt("inter you 2nd number");
-
-nume(name,$name)
-
-
-
-
-
+     
+myEvent()
     </script>
+
+
+    
+
+
+
 </body>
 </html>
