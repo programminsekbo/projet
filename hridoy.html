@@ -7,35 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    
 
-
-
-
-
+    <button onclick="myEvien()">  click </button>
 
     <script>
 
+            async function myEvien() {
+
+            let url ="https://crud.teamrabbil.com/api/v1/CreateProduct";
+            let data ={
+                "ProductName":"hridoy",
+                "ProductCode":"abc123",
+                "Img":"abc",
+                "UnitPrice":"12",
+                "Qty":"1",
+                "TotalPrice":"12"
+            };
+
+
+            let rekust ={
+            method:"POST",
+            body : JSON.stringify(data),
+
+            }
+
+            let hridoy = await fetch(url, rekust);
+            let jason = await hridoy.json();
+            console.log(jason);
+
+            };
 
 
 
-
-
-async function myEvent() {
-
-let hridoy = await fetch("https://jsonplaceholder.typicode.com/todos/1");
- 
-let myName = await hridoy.json();
-   console.log(myName)
-
-};
-     
-myEvent()
     </script>
-
-
-    
-
 
 
 </body>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<BUtton onclick="myName()">click</BUtton>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <SCript>
+
+async  function myName(){
+      let id ="6649013a9e9e30ec38d4427";
+      let url ="https://crud.teamrabbil.com/api/v1/DeleteProduct/"+id;
+
+      let  mader = await fetch(url);
+      let data = await mader.json();
+      console.log(data);
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    </SCript>
+</body>
+</html>
